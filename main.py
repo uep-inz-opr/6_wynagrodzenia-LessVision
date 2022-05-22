@@ -18,7 +18,10 @@ class pracownik:
         K = round(A - C - E - J,2)
         L = round(round(0.0976*self.dochod,2) + round(0.065*self.dochod,2) + round(0.0193*self.dochod,2) + round(0.0245*self.dochod,2) + round(0.001*self.dochod,2),2)
         Ł = round(A + L,2)
-        return f"{self.imie} {K} {L} {Ł}"
+        K_print = "{:.2f}".format(K)
+        L_print = "{:.2f}".format(L)
+        Ł_print = "{:.2f}".format(Ł)
+        return f"{self.imie} {K_print} {L_print} {Ł_print}"
         #return f"{self.imie} {A} {B} {C} {D} {E} {F} {G} {H} {I} {J} {K} {L} {Ł}"
 
 
